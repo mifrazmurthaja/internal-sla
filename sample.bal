@@ -13,14 +13,14 @@ configurable http:BearerTokenConfig gitHubTokenConfig = ?;
 @display {
     label: "GitHub Repository Name"
 }
-configurable string repositoryName = ?;
+configurable string repositoryName = "test-git-actions";
 
 @display {label: "Github Repository Owner"}
-configurable string repositoryOwner = ?;
+configurable string repositoryOwner = "Pratheesha97";
 
 // Email configuration parameters 
 @display {label: "Email Receiver Address"}
-configurable string recipientAddress = ?;
+configurable string recipientAddress = "samadhiw@wso2.com";
 
 public function main() returns error? {
 
