@@ -47,9 +47,9 @@ public function main() returns error? {
     });
 
     string query1 = "repo:" + repositoryOwner + "/" + repositoryName + " is:issue is:open";
-    log:printInfo("Query: ${query1}");
+    log:printInfo("Query:" + query1);
     github:SearchResult|github:Error openIssues = githubClient-> search(query1, github:SEARCH_TYPE_ISSUE, 1);
-    log:printInfo("openIssues: ${openIssues}");
+    log:printInfo("openIssues:" + openIssues);
     if openIssues is github:Error {
         log:printError("Error while searching open issues.", 'error = openIssues);
     }
